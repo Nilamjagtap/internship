@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+          .mySlides {display:none;}
+li
+{
+    background-color:orange;
+    height: 28px;
+    border-radius: 7px;
+}
+    </style>
+    <title>The Sweet Shop</title>
+</head>
+<body>
+<h1 align="center"><font size="7">The Sweets Shop<hr></font></h1>
+
+<table width="100%" border="0" bgcolor="green" style="color: white;" height="100px">
+     <tr>
+	<th width="16.66%">HOME</th>
+	<th width="16.66%">ABOUT</th>
+	<th width="16.66%">SWEETS</th>
+	<th width="16.66%">GALLERY</th>
+	<th width="16.66%">FEEDBACK</th>
+	<th width="16.66%">CONTACT</th>
+      </tr>
+    </table>
+
+    <br>
+    <table width="100% border="3" height="400px" bgcolor="black">
+       <tr>
+          <td width="15%" bgcolor="green"><b><font color="white">MENU</font><b></td>
+          <td width="65%" rowspan="12" class="w3-content w3-section">
+          <img src="b1.jpg" class="mySlides"> 
+	  <img src="b2.jpg" class="mySlides">
+	  <img src="b3.jpg" class="mySlides">
+	  <img src="b4.jpg" class="mySlides">
+          </td>
+          <td width="20%" rowspan="6"><img src="b2.jpg"></td>
+        </tr>
+        <tr>
+          <td><li>Agra petha</li></td>
+          </tr>
+        <tr>
+          <td><li>balushahi</li></td>
+          </tr>
+	<tr>
+          <td><li>laadu</li></td>
+         </tr>
+	<tr>
+          <td><li>Boondi</li></td>
+        </tr>
+	<tr>
+          <td><li>mavameethai</li></td>
+        </tr>
+	<tr>
+          <td><li>Imrati</li></td>
+          <td rowspan="6"><img src="b3.jpg"></td>
+        </tr>
+	<tr>
+          <td><li>Ghevar</li></td>
+        </tr>
+	<tr>
+          <td><li>Jalebi</li></td>
+        </tr>
+	<tr>
+          <td><li>Kaju Katli</li></td>
+        </tr>
+	<tr>
+          <td><li>Kalakand</li></td>
+        </tr>
+	<tr>
+          <td><li>Kheer</li></td>
+        </tr>
+ </table>
+ <p> 
+    This is a deep and sweet tasting mithai and very popular. It is made from khoya, mixed together with flour and sugar, and then deep fried. Either in ball shapes or rounded rectangular shapes. Once fried and brown, it is coated all over with a sugar syrup flavored with cardamom seeds and rosewater, kewra or saffron.
+In the diverse languages of the Indian subcontinent, sweets are called by numerous names, one common name being Mithai They include sugar, and a vast array of ingredients such as different flours, milk, milk solids, fermented foods, root vegetables, raw and roasted seeds, seasonal fruits, fruit pastes and dry fruits.[8] Some sweets such as kheer are cooked, some like burfi are baked, varieties like Mysore pak are roasted, some like jalebi are fried, others like kulfi are frozen, while still others involve a creative combination of preparation techniques.[9][10][11] The composition and recipes of the sweets and other ingredients vary by region. Mithai are sometimes served with a meal, and often included as a form of greeting, celebration, religious offering, gift giving, parties, and hospitality in the Indian subcontinent 
+ </p>
+
+<script>
+var myIndex= 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x=document.getElementsByClassName("MySlides");
+  for(i=0;i<x.length;i++){
+    x[i].style,display="none";
+   }
+   myIndex++;
+   if(myIndex>x.length) {myIndex=1}
+   x[myIndex-1].style.display="block";
+   setTimeout(carousel, 3000);
+   }
+</script>
+
+</html>
